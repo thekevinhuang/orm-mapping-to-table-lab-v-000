@@ -4,7 +4,7 @@ class Student
   #  with DB[:conn]
 
   attr_reader :name, :grade, :id
-  
+
   def initialize (name, grade, id = nil)
     @name = name
     @grade = grade
@@ -29,6 +29,6 @@ class Student
     DB[:conn].execute(sql)
   end
 
-  
-  
+
+
 end
